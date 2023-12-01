@@ -5,6 +5,10 @@ type Props = {
     children: React.ReactNode
 }
 
+export const metadata = {
+  title: 'The Store'
+}
+
 export default function StoreLayout(props: Props) {
   return (
 

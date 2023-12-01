@@ -1,9 +1,23 @@
-import React from 'react'
+// 'use client'
+import React from "react";
 
-type Props = {}
+import Users from "@/components/Users";
 
-export default function HomePage({}: Props) {
+export const metadata = {
+  title: "Zona Chapín - Home",
+  description: "Zona Chapín - Home",
+}
+
+
+
+export default function HomePage() {
   return (
-    <h1>Zona Chap&iacute;n</h1>
-  )
+    // server component
+    <section>
+      <h1>Zona Chap&iacute;n</h1>
+      <button>Marry Me!</button>
+      {/* client component */}
+      <Users />
+    </section>
+  );
 }
