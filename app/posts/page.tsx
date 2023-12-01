@@ -13,7 +13,7 @@ type Props = {
 };
 
 // React Server Component
-export default async function PostPages(props: Props) {
+export default async function PostPages(props: any) {
   const posts = await loadPosts();
 
   return (
